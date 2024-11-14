@@ -12,7 +12,7 @@ export default function Home() {
       <div className="bg-slate-900 flex items-center justify-center h-screen">
         <Sheet>
           <SheetTrigger>
-            <button className="bg-slate-800 text-white p-4 px-10 rounded-lg">Open</button>
+            <button className="bg-slate-800 text-white p-4 px-10 rounded-lg">Login</button>
           </SheetTrigger>
           <SheetContent className="w-[400px] sm:w-[540px] bg-slate-800 border-none text-white">
             <SheetHeader>
