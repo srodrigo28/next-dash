@@ -1,20 +1,20 @@
 "use client"
 
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   return (
-    <div className="bg-slate-950 flex items-center justify-center h-screen">
-
+    <div className="bg-slate-950 flex items-center gap-2 justify-center h-screen">
+      <Link href="users" className="w-25 bg-green-700 text-white p-2 px-5 rounded-md">Users</Link>
       <Sheet>
         <SheetTrigger asChild>
-          <Button variant="outline">Login</Button>
+          <button className="px-5 p-2 bg-blue-700 text-white rounded-md">Login</button>
         </SheetTrigger>
         <SheetContent className="flex flex-col items-center bg-slate-800 text-white border-none">
           <SheetHeader>
