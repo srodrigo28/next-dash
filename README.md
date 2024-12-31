@@ -2,11 +2,14 @@
 #### rodando o projeto
 
 * Backend - Banco de dandos
+```
 npx json-server banco.json --port 8080
+```
 
 * Frontend - Web
+```
 npm run dev
-
+```
 
 #### Screens
 * page 1.
@@ -32,11 +35,6 @@ npx shadcn@latest init -d
 ```
 
 * Configure components.json
-
-#### Components Shadc-UI
-``` 58min
-https://ui.shadcn.com/docs/components/accordion
-```
 
 #### Ref.
 ```
