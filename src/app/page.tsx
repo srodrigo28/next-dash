@@ -10,11 +10,11 @@ export default function Home() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   return (
-    <div className="bg-slate-950 flex items-center gap-2 justify-center h-screen">
-      <Link href="users" className="w-25 bg-green-700 text-white p-2 px-5 rounded-md">Users</Link>
+    <div className="bg-slate-950 flex items-center gap-2 justify-center h-screen relative" >
+      <Link href="users" className="w-25 bg-green-700 text-white p-2 px-5 rounded-md">Users 2</Link>
       <Sheet>
         <SheetTrigger asChild>
-          <button className="px-5 p-2 bg-blue-700 text-white rounded-md">Login</button>
+          <button className="px-5 p-2 bg-blue-700 text-white rounded-md absolute top-4 right-4">Login 2</button>
         </SheetTrigger>
         <SheetContent className="flex flex-col items-center bg-slate-800 text-white border-none">
           <SheetHeader>
@@ -36,7 +36,9 @@ export default function Home() {
           <SheetFooter>
             <div className="btn-group flex gap-2">
               <SheetClose asChild>
-                <button className="bg-blue-600 hover:bg-blue-700 w-28 text-white p-1 rounded-md">Entrar</button>
+                <Link href="/dashboard">
+                  <button className="bg-blue-600 hover:bg-blue-700 w-28 text-white p-1 rounded-md">Entrar</button>
+                </Link>
               </SheetClose>
               <button className="bg-green-600 hover:bg-green-700 text-white p-1 w-28 rounded-md">Cadastrar ?</button>
             </div>
