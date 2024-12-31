@@ -11,6 +11,11 @@ npx json-server banco.json --port 8080
 npm run dev
 ```
 
+* gerando build
+```
+npm run build
+```
+
 #### Screens
 * page 1.
 <img src="./screens/page1.png" alt="">
