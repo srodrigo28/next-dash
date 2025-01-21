@@ -5,12 +5,13 @@ import { Label } from "@/components/ui/label";
 import { Sheet, SheetClose, SheetContent, SheetDescription, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import Link from "next/link";
 import { useState } from "react";
+import { colors } from "../styles/colors"
 
 export default function Home() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   return (
-    <div className="bg-slate-950 flex items-center gap-2 justify-center h-screen relative" >
+    <div className={`flex items-center gap-2 justify-center h-screen relative`} style={{ backgroundColor: colors.success } } >
       <Link href="users" className="w-25 bg-green-700 text-white p-2 px-5 rounded-md">Users 2</Link>
       <Sheet>
         <SheetTrigger asChild>
